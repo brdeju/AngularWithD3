@@ -175,7 +175,7 @@ app.directive("multipleBarChart", ['Zawod', function (Zawod) {
                     .data(data)
                     .enter().append("g")
                     .attr("transform", function(d, i) {
-                        return "translate(120," + (i * barHeight + gapBetweenGroups * (Math.floor(i/dataset.series.length))) + ")";
+                        return "translate(110," + (i * barHeight + gapBetweenGroups * (Math.floor(i/dataset.series.length))) + ")";
                     });
                 bar.append("rect")
                     .attr("fill", function(d,i) { return colors(i % dataset.series.length); })
