@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Zadanie: Angular/D3</title>	
+	<script src="js/angular.min.js"></script>
+	<script src="js/d3.min.js" charset="utf-8"></script>
+</head>
+<body ng-app="MainApp">	
+	<div ng-controller="chartsController">
+		<p>Wybierz zawód:</p>
+		<select ng-model="url" >
+			<option value="zawod1">zawod 1</option>
+			<option value="zawod2">zawod 2</option>
+			<option value="zawod3">zawod 3</option>
+		</select>
+		<br />
+                <p>Średnie wynagrodzenie:</p>
+                <input id="srWynagrodzenie" type="number" ng-model="srWynagrodzenie" > 
+                <br />
+                <br />
+		<multiple-bar-chart></multiple-bar-chart>	
+                <br />
+		<bar-chart></bar-chart>							
+	</div>
+
+	<script src="app/app.js"></script>
+</body>
+</html>
